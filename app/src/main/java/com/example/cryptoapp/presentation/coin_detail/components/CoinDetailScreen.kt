@@ -63,8 +63,9 @@ fun CoinDetailScreen(
                         //Description
                         Text(
                             text = coin.description,
-                            style = MaterialTheme.typography.body2,
-                            color = Color.White
+                            style = MaterialTheme.typography.body1,
+                            color = Color.White,
+                            textAlign = TextAlign.Start
                         )
 
                         Spacer(modifier = Modifier.height(15.dp)) // for Space
@@ -108,7 +109,7 @@ fun CoinDetailScreen(
                             .fillMaxWidth()
                             .padding(10.dp)
                     )
-                    Divider() // Divider Line
+                    Divider(modifier= Modifier.fillMaxWidth(),color= Color.White) // Divider Line
 
                 }
             }
